@@ -1,4 +1,4 @@
-package logicielslibres.fr.voyage1;
+package logicielslibres.fr.voyage2;
 
 import android.content.Intent;
 import android.os.Bundle;

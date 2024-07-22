@@ -31,7 +31,7 @@
         android:padding="8dp"/>
 
     <!-- Titre du texte -->
-    <EditText android:id="@+id/nomMedicament"
+    <EditText android:id="@+id/titre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/titreTexte"
@@ -42,7 +42,7 @@
 
     <!-- Zone de texte -->
     <EditText
-        android:id="@+id/posologie"
+        android:id="@+id/texte"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/texte"
@@ -75,7 +75,7 @@
 
     <!-- bouton-->
     <Button
-        android:id="@+id/boutonPrecedent"
+        android:id="@+id/boutonQuitter"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:layout_height="wrap_content"

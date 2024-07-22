@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme without ActionBar. -->
-    <style name="Theme.Voyage1" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Voyage2" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Couleurs du theme -->
         <item name="colorPrimary">@color/grisFonce</item>
         <item name="colorPrimaryDark">@color/grisClair</item>
