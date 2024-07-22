@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/blanche"
+    android:orientation="vertical">
+
+    <!-- Titre - Voyage -->
+    <TextView
+        android:id="@+id/titrePrescriptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titreVoyages"
+        android:textSize="32sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/marron"/>
+
+    <!-- Champ pour la date de début -->
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/date"
+        android:layout_marginBottom="16dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:padding="8dp"/>
+
+    <!-- Titre du texte -->
+    <EditText android:id="@+id/nomMedicament"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/titreTexte"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="8dp"/>
+
+    <!-- Zone de texte -->
+    <EditText
+        android:id="@+id/posologie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/texte"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:minLines="8"
+        android:gravity="top"/>
+
+    <!-- Image des chaussures -->
+    <ImageView
+    android:id="@+id/imageLogoAdresse"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:adjustViewBounds="true"
+    android:contentDescription="@string/imageChaussures"
+    android:src="@drawable/chaussures100x100"
+    android:layout_marginBottom="20dp"/>
+
+
+
+    <!-- Ligne grise -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/grisFonce"/>
+
+    <!-- bouton-->
+    <Button
+        android:id="@+id/boutonPrecedent"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/marron"
+        android:text="@string/quitter"
+        android:onClick="quitter"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">voyage1</string>
+    <string name="titreVoyages">Voyages</string>
+    <string name="voyages">Voyages</string>
+    <string name="montagne">Montagne</string>
+    <string name="chaussures">Chaussures</string>
+    <string name="imageMontagne">Image de montagne</string>
+    <string name="imageChaussures">Image de chaussures</string>
+    <string name="suivant">Suivant</string>
+    <string name="date">Date</string>
+    <string name="retour">Retour</string>
+    <string name="titre">Titre</string>
+    <string name="texte">Texte</string>
+    <string name="titreTexte">Titre du texte</string>
+    <string name="quitter">Quitter</string>
+</resources>

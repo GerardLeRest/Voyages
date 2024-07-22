@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="orange">#FFA500</color>
+        <color name="blanche">#FFFFFF</color>
+        <color name="grisFonce">#343A40</color>
+        <color name="grisClair">#E9ECEF</color>
+        <color name="noire">#000000</color>
+        <color name="marron">#8B4513</color>
+</resources>
