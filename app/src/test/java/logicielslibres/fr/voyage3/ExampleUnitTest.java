@@ -1,4 +1,4 @@
-package logicielslibres.fr.voyage2;
+package logicielslibres.fr.voyage3;
 
 import org.junit.Test;
 

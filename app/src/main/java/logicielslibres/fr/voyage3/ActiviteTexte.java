@@ -1,16 +1,13 @@
-package logicielslibres.fr.voyage2;
+package logicielslibres.fr.voyage3;
 
 import android.Manifest;
 import android.app.DatePickerDialog;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.os.Environment;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -82,14 +79,20 @@ public class ActiviteTexte extends AppCompatActivity {
             String messageErreur = "Au moins un des champs n'a pas été saisi.";
             Toast.makeText(ActiviteTexte.this, messageErreur, Toast.LENGTH_LONG).show();
         } else {
+            // appel au "model"
+            NombreMots nombreMots = new NombreMots(texteTexte);
+            int nbreMots = nombreMots.compterMots(); //comptage des mots du texte
+            int nbreOccurences = nombreMots.occurence(texteTitre); // occurence du titre dans le texte
             // Enregistrement des données
             String nomDeFichier = texteTitre + ".txt";
             // on va enregistrer le fichier dans le dossier Documents d'Android
-            File fichier = new File("/storage/emulated/0/Documents", nomDeFichier);
+            File fichier = new File("/storage/emulated/0/Documents", nomDeFichier); //chemin de Documents dans l'arborescence android
             try (FileWriter writer = new FileWriter(fichier)) {
                 writer.write("Date: " + texteDate + "\n");
                 writer.write("Titre: " + texteTitre + "\n");
                 writer.write("Texte: " + texteTexte + "\n");
+                writer.write("Nombre de mots: " + nbreMots+ "\n");
+                writer.write("Nombre d'ocurences du titre dans le texte: " + nbreOccurences);
                 writer.flush();
                 Toast.makeText(this, "Fichier enregistré avec succès.", Toast.LENGTH_LONG).show();
                 finishAffinity();

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "logicielslibres.fr.voyage2"
+    namespace = "logicielslibres.fr.voyage3"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "logicielslibres.fr.voyage2"
+        applicationId = "logicielslibres.fr.voyage3"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
